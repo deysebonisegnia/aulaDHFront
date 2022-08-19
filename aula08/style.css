@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
+
+body{
+    background-color:#131313;
+
+}
+h1{
+    color: white;
+    font-family: roboto, Helvetica, sans-serif;
+}
+
+.media-picture{
+    background-image: url("./img/vingadores.jpg");
+    height: 600px;
+    background-size: cover;
+}
+.review-score{
+    background-color: #e6bd09;
+    color: white;
+    padding: 12px;
+}
+h2{
+    color: steelblue;
+}
+p{
+    color: #bdbdbd; 
+    font-family: roboto,Helvetica,sans-serif;
+
+
+}
+a{
+    color: yellow;
+}
