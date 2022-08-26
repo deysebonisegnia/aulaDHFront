@@ -1,0 +1,107 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: roboto,Arial, Helvetica, sans-serif;
+background-color: #fbf9f9;
+}
+
+.logo{
+    background-color: black;
+    margin: 1%;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.menu{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.menu ul{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 12px;
+}
+a{
+    color:#fbf9f9; 
+    display: flex;
+    background-color: black;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 12px;
+    
+}
+.menu ul li{
+    text-align: center;
+    justify-content: space-between;
+    border-style: none;
+    margin-top: -2%;
+    align-items: center;
+    display: flex;
+    background-color: black;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+
+}
+.cardapio{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 2%;
+    height: 100%;
+    box-sizing: none;
+}
+h2{
+    
+    width: 100%;
+    margin-top: -92%;
+    margin-left: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+.pizza{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    
+    margin-left: -10%;
+}
+.top{
+    width: 50%;
+    height: 50%;
+    margin-left: -20%;
+    
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+}
+.footer nav ul li{
+    color: #fbf9f9;
+    list-style: none;
+    background-color: black;
+
+
+}
+
+
+
