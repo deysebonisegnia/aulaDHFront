@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet</title>
     <link rel="stylesheet" href="css.style.css">
+    <link href="https://fonts.google.com/specimen/Roboto?preview.text=Considerando%20que%20o%20reconhecimento%20da%20dignidade%20inerente&preview.text_type=custom">
     <script src="https://kit.fontawesome.com/f3897c2d3a.js" crossorigin="anonymous"></script>
 
 </head>
 <body> 
     <header>
         <section>
-        <div>
+        <div class="bar">
             <p>Grandes ofertas em  comedouros</p>
-        </div>
-        
             <div class="selected">
                 <label for="selected">Português</label>
                 <select required><br>
@@ -33,52 +32,92 @@
                     <option value="Euro">Euro</option> 
                 </select>
             </div>
-            
-            <div>
+        </div>
+            <div class="menu">
+                <div class="cat-dog">
                 <img src="./img/Cat.png" alt="cat">
-            </div>
-            <div>
-                <h1><span>Front</span>Cat$Dog</h1></div>
-            <div>
+                <h1><strong>Front</strong>Cat$Dog</h1>
                 <img src="./img/Dog.png" alt="Dog">
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><i class="fa-solid fa-paw"></i>Categoria </li>
-                        <li><i class="fa-solid fa-paw"></i>Pets</li>
-                        <li><i class="fa-solid fa-paw"></i>Quem somos</li>
-                        <li><i class="fa-solid fa-paw"></i>Cantato</li>
-                    </ul>
+                <nav class="nav">
+                    
+                        <a href="#produto"><i class="fa-solid fa-paw"></i>Categoria</a>
+                        <a href="#produtos"><i class="fa-solid fa-paw"></i>Pets</a>
+                        <a href="#contato"><i class="fa-solid fa-paw"></i>Quem somos</a>
+                        <a href="#map"><i class="fa-solid fa-paw"></i>Contato</a>
+                    
                 </nav>
             </div>
             </section>
     </header>
     <main> 
         <section>
-        <img src="./img/Slide.png" alt="">
-        <div class="produtos">
-        <i class="fa-solid fa-paw"></i>
+        <img class="slide"src="./img/Slide.png" alt="slide">
+        
+        <div class="produto" id="produto">
+        <img src="./img/pata.png" alt="pata">
         <h2>Produtos destacados</h2>
-        <span>Comedouros-Acessorios-Comida</span>
+        <span>Comedouros-  Acessorios-  Comida</span>
+        </div>
+        <div class="produtos" id="produtos">
         <div>
             <img src="./img/churrasquito.png" alt="churrasquito">
+            <h4>Petisco Churrasquito</h4>
+            <span>$150</span>
         </div>
         <div>
             <img src="./img/comedero.png" alt="comedero">
+            <h4>Comedouro para cachorro</h4>
+            <span>$250</span>
         </div>
         <div>
-            <img src="./img/Huesito.png" alt="">
+            <img src="./img/Huesito.png" alt="huesito">
+            <h4>Petisco Ossinho<h4><br><br>
+            <span>$650</span>
         </div>
 
+        </div>
+        </section>
+        <section class="contato" id="contato">
+            <h3>Contato</h3>
+            <div class="input">
+            <a  href="#">Nome e sobrenome</a>
+            <a  href="#">Seu email</a>
+            <a  href="#">Telefone</a>
+        </div>
+        <div class="buttons">
+        <button class="button">Limpar</button>
+        <button>Enviar</button>
+        </div>
+
+        </section>
+        <section class="email">
+            <img src="./img/Vector.png" alt="email">
+            <p>Inscreva-se para mais novidades</p>
+        <div class="Informe">
+            <a class="Infor" href="#">Informe seu email</a>
+            <a class="inf"href="#">Enviar</a>
         </div>
         </section>
 
     </main>
     <footer>
-        <i class="fa-solid fa-phone-volume">telefone</i>
-        <i class="fa-solid fa-location-dot">localização</i>
-        <i class="fa-solid fa-envelope-circle-check">email</i>
+        <section class="map" id="map">
+        <div >
+            <img class="q"src="./img/Vector map1.png" alt="mapa">
+            <h5>Localização</h5><span>São paulo</span>
+            <img class="q"src="./img/Vector phone1.png" alt="phone">
+            <h5>Telefone</h5><span>(11)11111111</span>
+            <img class="q"src="./img/vector email.png" alt="e-mail"></i>
+            <h5>Email</h5><span>email@.com</span>
+        </div>
+        <div class="cat_dog">
+            <img src="./img/Cat.png" alt="cat">
+            <h1><span>Front</span>Cat$Dog</h1>
+            <img src="./img/Dog.png" alt="Dog">
+        </div>
+        </section>
+            <p>Todos os direitos reservados a front-end 1</p>
     </footer>
     
 </body>
