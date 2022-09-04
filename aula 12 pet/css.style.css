@@ -12,28 +12,30 @@
     justify-content: space-around;
     background-color: black;
     color: #ffff;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: start;
 }
 .menu{
     display: flex;
     justify-content: space-between;
     background-color:#F0A83E;
-    padding: 3%;
-    
-
+    padding: 1rem;
 }
+header{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}   
 .cat-dog ,.cat_dog{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
-    line-height: 23px;
-    
-
+    line-height: 1.3rem;
+    margin-left: 1rem;
 }
+
 h1{
     color: #ffff;
     font-weight: bold;
@@ -51,42 +53,44 @@ a{
 }
 .nav  {
     display: flex;
-    width: 50%;
+    width: 50vw;
     justify-content: space-between;
+    margin-right: 1rem;
 
 
 }
 .slide{
-    width: 100%;
+    width: 100vw;
 }
 .produto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 3rem;
     
 }
 .produto img{
     text-align: center;
-    font-size: 50px;
-    margin-top:-100px;
-    margin-left: 30px;
+    font-size: 4rem;
+    margin-top:-6rem;
+    margin-left: 2rem;
+
 }
 .produto h2{
-    margin-top:10px;
-    margin-left: -200px;
+    margin-top:0.5rem;
+    margin-left: -12rem;
     color:#3C2313;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 46px;
+    font-size: 2.2rem;
+    line-height: 3rem;
 }
 .produto span{
-    margin-top:80px;
-    margin-left: -300px;
-    font-size: 15px;
+    margin-top:5rem;
+    margin-left: -18rem;
+    font-size: 1rem;
     font-weight: bold;
-    line-height: 17px;
+    line-height: 1rem;
     color:#666666;
 
 }
@@ -95,21 +99,21 @@ a{
     flex-direction:row;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    gap: 20px;
-    position: relative;
+    margin-top: 2rem;
+    gap: 1rem;
+
 }
 .produtos h4{
-    position: absolute;
-    top: 80%;
-    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
     color:#3C2313;
+    margin-top: -3rem;
 }
 .produtos span{
-    position: absolute;
-    top: 90%;
-    text-align: left;
-    margin-left: -15%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
     color:#F0A83E;
 }
 .produtos h4 ,span {  
@@ -118,23 +122,31 @@ font-weight: bold;
 line-height: 18px;
 letter-spacing: 0em;
 
+} .huesito{
+    margin-top: -4rem;
+
+}
+.huesito span{
+    margin-bottom: -7rem;
 }
 .contato{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 .contato h3{
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #3C2313;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
-    line-height: 29px;
+    line-height: 1rem;
     letter-spacing: 0em;
     text-align: center;
-    top :4%;
-    left:45% ;
+    margin-top: -15rem;
+    margin-left: 10rem;
+
 
 }
 .input {
@@ -142,40 +154,38 @@ letter-spacing: 0em;
     flex-direction: column;
     justify-content: space-between;
     text-align: start;
-    margin-top:-3%;
-    padding: 4px;
-    gap:3px;
+    margin-top:-1rem;
     border: none;
-    font-size: 10px;
+    font-size: 0.7rem;
     color:#ffff;
-    margin-left: -2%;
+
 }
 .input a{
-    border-radius: 15px;
+    border-radius: 1rem;
     background-color: #3C2313;
-    padding: 12px ;
-    width: 340px;
-    height: 40px;
-    margin-top:5% ;
+    padding: 0.9rem ;
+    width: 25vw;
+    height: 8vh;
+    margin-top:1rem;
+    margin-left: -13rem;
 }
 
 .buttons{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 22%;
-    margin-left: -25%;
+    margin-top: 15rem;
+    margin-left: -18rem;
 }
 button{
-    border-radius: 15px;
+    border-radius: 1rem;
     background-color: #F0A83E;
     color: #ffff;
-    width:110px ;
-    height: 34px;
-    padding: 10px;
+    width:8rem;
+    height: 3rem;
     text-align: center;
     border: none;
-    margin: 1%;
+    margin: 0.5rem;
 }
 .button{
     background-color: #969696;
@@ -184,69 +194,77 @@ button{
 .email{
     background-color: #F0A83E;
     color: #ffff;
-    margin-top: 2%;
+    margin-top: 1rem;
     
 
 }.email p{
-    padding: 1px;
-    margin-left: 10%;
-    font-size: 20px;
+    margin-left: 8rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 1.2rem;
     letter-spacing: 0em;
     text-align: left;
-    margin-top:-2% ;
+    margin-top:-1.3rem;
 
 }
 .email img{ 
-    margin-left: 5%;
-    margin-top: 2%;
+    margin-left: 5rem;
+    margin-top: 2rem;
 }
 .Informe{
-    margin-left: 80%;
-    text-align: center;
-    margin-top: -1%;
-    justify-content: space-around;
     display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: center;
+    margin-top:-1rem ;
+    
+
 }
-.Infor{
+    .Infor{
     background-color: #ffff;
     color: rgb(44, 43, 43);
-    border-radius: 15px;
-    padding:10px;
-    margin-left: -90%;
-    width: 300px;
-    height: 40px;
-    margin-bottom: 5%;
+    border-radius: 1rem;
+    padding:0.7rem;
+    margin-right: 3rem;
+    width: 20vw;
+    height: 8vh;
+    margin-bottom: 1rem;
     text-align: start;
 }
 .inf{
     background-color: #3C2313;
     color: #ffff;
-    border-radius: 15px;
-    margin-right: 13%;
-    width: 80px;
-    height: 34px;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    width: 10vw;
+    height: 8vh;
     text-align: center;
-    padding: 8px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
 
 
 }
 .map{
     display: flex;
     background-color: #3C2313;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     border: none;
 }
-.map h5{
-    margin-top: -50%; 
-    margin-left: 20%;
+.end{
+    margin-top: 0.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    
+}
+.end h5{
     list-style: none;
     background-color: #3C2313;
-    box-sizing: border-box;
     color: #ffff;
+    margin-top: -3rem;
 }
-.map span{
+.end span{
     color :#ffff;
 }
 .q{
@@ -254,14 +272,11 @@ button{
     justify-content: space-between;
     flex-direction: column;
     color: #ffff;
-    padding:  12px;
+    padding:  0.8rem;
     align-items: flex-start;
     background-color: #666666;
     border-radius: 50%;
-    margin-left: -80%;
-    margin-top: 19%;
-    height: 26%;
-    box-sizing: border-box;
+    margin: 0.5rem -8rem 1rem ;
     border: 5px solid #786960;
 
 }
@@ -270,10 +285,94 @@ button{
     text-align: end;
     justify-content: end;
     align-items: center;
-    width: 20%;
 }
 footer p{
     color: #ffff;
     background-color: black;
     text-align: center;
+    padding: 0.5rem;
 }
+/* responsividade*/
+@media (max-width:800px){
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .bar{
+        font-size: 0.7rem;
+    }
+    .menu{
+        flex-direction: column;
+        height: 15vh;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction:row;
+        width: 85vw;
+        margin: 1rem;
+        justify-content: space-evenly;
+        text-align: center;
+}
+    main,.produto,.produtos{
+        flex-direction:column;
+        margin-left: 0.2rem;
+        
+    }
+    .produto img{
+    margin-top:0.01rem ;
+    margin-bottom: 1rem;
+    }
+    .produto h2 {
+        text-align: center;
+        margin-left: 0.2rem;
+        font-size: 1rem;
+    }
+    .produto span{
+        margin:1rem 0.2rem 0.1rem;
+        font-size: 1rem;
+    }
+    .produtos h4{
+        margin-top: -3rem;
+        text-align: center;
+
+    }
+    .produtos{
+        gap: 2rem;
+    }
+    .contato{
+        margin-top: 5rem;
+        margin-left: -8rem;
+    }
+    .huesito{
+        margin-top: 0.2rem;
+    }
+    .input a{
+    width: 60vw;
+    }
+    .email{
+        margin-left: -4rem;
+        height: 25vh;
+    }
+    .Informe{
+        display: block;
+        margin-top: 2rem;
+    }
+    .Infor{
+        padding: 0.5rem 2rem;
+    }
+    .inf{
+        padding: 0.5rem 1rem;
+    }
+    .end{
+        margin-left: 9rem;
+        margin-bottom: 1rem;
+    }
+    .cat_dog{
+        margin-top:-13rem;
+        margin-left: -5rem;
+    }
+
+}
+

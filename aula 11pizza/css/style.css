@@ -9,6 +9,8 @@ background-color: #fbf9f9;
 .logo{
     background-color: black;
     margin: 1%;
+}.logo img{
+    background-color: black;
 }
 .header{
     display: flex;
@@ -93,7 +95,10 @@ h2{
     display: flex;
     justify-content: space-between;
     background-color: black;
-    padding: 10px;
+    padding: 1rem;
+}
+.footer img{
+    background-color: black;
 }
 .footer nav ul li{
     color: #fbf9f9;
