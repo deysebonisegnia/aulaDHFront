@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Roboto' Arial, Helvetica, sans-serif;
-    
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;    
 }
 header{
     position: sticky;
@@ -33,30 +33,19 @@ header{
     line-height: 2rem;
     padding: 1rem;
     margin-left:6rem ;
-}
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem;
-    
-}.conten{
-    width:52vw;
-    height: 37vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+} 
 .bg {
     position: relative;
     width: 30vw;
-    height: 50vh;
-
+    height: 40vh;
+    background-repeat: no-repeat;
 }
 .batman{
     background-image: url("/aula10BatmanArlequina/img/Batman\ fundo.png");
+
 }
 .arlequina{
+
     background-image: url("/aula10BatmanArlequina/img/Arlequina\ fundo2.png");
 }
 .superman{
@@ -65,70 +54,60 @@ main{
 .mulhermaravila{
     background-image: url("/aula10BatmanArlequina/img/mulher maravilha\ fundo.png");
 }
-.hero-img ,.hero-,.hero_,.hero__{
+.hero-img {
     border-radius: 50%;
     position: absolute;
-    bottom: -25%;
-    right: 15%;
+    bottom: -3rem;
+    right: 5rem;
     width:15vw;
-    height: 20vh;
+    height: 18vh;
 }
-.hero-{
-    left: 45%;
-}/*
-.hero_{
-    right:25% ;
-}
-
-.hero__{
-    left:45% ;
-}*/
-
-
 .icon-heart {
     position: absolute;
     left: 1rem;
     top: 1rem;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    max-width: 90vw;
+}
+.content{
+    display: flex;
+    justify-content: center;
 
-.card ,.card-,.cards,.cards-{
-    display: flex;   
-    justify-content: space-between;
-    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width:850px ;
+}
+.card {  
+    margin: 1rem;
     background: #F3F3F3;
-    margin: 1rem 0;
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: 0px 2px 2px #c1c1c1;
-    width: 23vw;
-    height: 37vh;
+    width: 30vw;
+    height: 100vh;
 }
-.card{
-    
+#sup{
+    margin-right: 25rem;
 }
-.card-{
-    
-    margin-top: -20rem;
-    margin-left: 30%;
+#arl{
+    margin-left: 25rem;
+    margin-top: -33rem;
 }
-.cards{
-    margin-top: 40rem;
-    margin-right: 30rem;
-}
-.cards-{
-    margin-top:40rem ;
-    margin-right:40rem ;
-}
-.text-card{
+
+.text-card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 30vw;
     align-items: center;
-    margin: 1.3rem auto;
-
+    width: 30vw;
+    margin-top:1.8rem;
 }
 .text-card h2 {
-    margin: 2.1rem;
+    margin: 1rem;
     font-size: 2rem;
     font-weight: 400;
     line-height: 2rem;
@@ -139,14 +118,16 @@ main{
     font-size: 1rem;
     line-height: 1.1rem;
     color: #333;
+    padding: 1rem;
 }
-button{
-    margin: 23px 0 20px 0;
+.text-card button{
+    padding: 1rem;
     background: #00669F;
     color: #F3F3F3;
     border: none;
-    padding: 17px 40px;
     cursor: pointer;
+    width: 10vw;
+    margin: 0.5rem;
 }
 .footer {
     margin-top: 50rem;
@@ -155,6 +136,7 @@ button{
     padding: 16px 28px;
     display: flex;
     justify-content: space-between;
+    margin-top: 6rem;
     
 }
 .footer p,a{
@@ -162,5 +144,36 @@ button{
     font-size: 1rem;
 
 }
+.footer a{
+    font-size: 2rem;
+}
 
-
+@media (max-width: 800px){
+    main , .content{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2rem;
+    
+    }
+    #sup{
+    margin-right: 1rem;
+    margin-top: 8rem;
+    }
+    #arl{
+        margin-left:-1rem ;
+        margin-top: 1rem;
+    }
+    .footer{
+        margin-top: 40rem;
+    }
+    
+    .card,.text-card,.text-card button, .bg{
+    margin-bottom: 1rem;   
+    width: 50vw;
+    }
+    .hero-img{
+        right: 5rem;
+    }
+}

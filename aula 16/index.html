@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <link rel="stylesheet" href="css.style.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <h4>Descontos de 20%</h4>
+        </section>
+        <div class="header2">
+            <h1>Super-heróis</h1>
+        </div>
+        <div class="retangulo">
+            <a href="./index.html">Contato</a>
+            <a href="./registro.html">Regisre-se</a>
+            <a href="./login.html">login</a>
+        </div>
+    </header>
+    <main>
+    <section class="section">
+        <h2> Adicionar seu super-herói </h2>
+        <p>Adicione seu personagem favorito completando as informações</p>
+    <form  class="form" action="/home" method="post">
+                <div class="selected">
+            <label for="text">Nome</label>
+            <input type="text"name="nome" id="nome" placeholder="Nome">
+            <label for="data">Data de nascimento</label>
+            <input type="date" id="Data"placeholder="data de nascimento">
+            <textarea  id="comentario"placeholder="Descrição"></textarea>
+                </div>
+                <div class="select">
+            <label for="selected">Especie</label>
+        <select name="especie" id="especie">
+            <option value="r">Humano</option>
+            <option value="p">Super-hunamo</option>
+            <option value="r">De outro planeta</option>
+        
+            <label id="foto"for="foto">Adicionar foto</label>
+            <input id="file"type="file" name="file">    
+            <label class="power"for="poderes">Poderes</label>
+            <div class="quali">
+            <input type="checkbox" name="poderes"><label for="">Voar</label>
+            <input type="checkbox" name="poderes"><label for="">Super inteligência</label>
+            <input type="checkbox" name="poderes"><label for="">Vista de raio laser</label>
+            <input type="checkbox" name="poderes"><label for="">Ser rico</label>
+        </div>
+        <label for="tipo">Tipo de personagem</label>
+        <input class="per"type="radio" name="Tipo"><label for="tipo">herói/heroína</label>
+        <input class="per"type="radio" name="Tipo"><label for="tipo">vilão/vilã</label>
+    </div>
+        <button id="button"type="submit">Adicionar</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+        Todos os direitos reservados a frontend 1
+    </footer>
+</body>
+</html>
