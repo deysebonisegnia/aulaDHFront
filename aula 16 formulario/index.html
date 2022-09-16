@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulário</title>
     <link rel="stylesheet" href="css.style.css">
+    <script src="https://kit.fontawesome.com/f3897c2d3a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -13,7 +15,9 @@
             <h4>Descontos de 20%</h4>
         </section>
         <div class="header2">
+            <i class="fa-solid fa-shop"></i>
             <h1>Super-heróis</h1>
+            
         </div>
         <div class="retangulo">
             <a href="./index.html">Contato</a>
@@ -33,28 +37,41 @@
             <input type="date" id="Data"placeholder="data de nascimento">
             <textarea  id="comentario"placeholder="Descrição"></textarea>
                 </div>
-                <div class="select">
+    <div class="select">
+        <fieldset class="especie">
             <label for="selected">Especie</label>
-        <select name="especie" id="especie">
-            <option value="r">Humano</option>
-            <option value="p">Super-hunamo</option>
-            <option value="r">De outro planeta</option>
+            <select name="especie" id="especie">
+            <option value="humano">Humano</option>
+            <option value="super-hunamo">Super-hunamo</option>
+            <option value="de outro planeta">De outro planeta</option>
+            </select>
+            <label id="foto"for="foto">Adicionar foto</label> 
+            <input id="file"type="file" name="file"> 
+            
+        </fieldset>
+        <fieldset class="checkbox">
+            <legend>Poderes</legend>
+            <input type="checkbox" name="voar">
+            <label for="voar">Voar </label>
+           <input type="checkbox" name="Super inteligência">
+            <label for="Super inteligência"> Super Inteligência</label>
+            <input type="checkbox" name="Vista de raio laser">
+            <label  for="Vista de raio laser">Vista de raio laser</label>
+            <input type="checkbox" name="Ser rico">
+            <label for="Ser rico">Ser rico</label>
+           
+        </fieldset>
+        <div class="line">__________________________</div>
         
-            <label id="foto"for="foto">Adicionar foto</label>
-            <input id="file"type="file" name="file">    
-            <label class="power"for="poderes">Poderes</label>
-            <div class="quali">
-            <input type="checkbox" name="poderes"><label for="">Voar</label>
-            <input type="checkbox" name="poderes"><label for="">Super inteligência</label>
-            <input type="checkbox" name="poderes"><label for="">Vista de raio laser</label>
-            <input type="checkbox" name="poderes"><label for="">Ser rico</label>
-        </div>
-        <label for="tipo">Tipo de personagem</label>
+        <fieldset class="radio">
+            <legend> Tipo de personagem</legend>
         <input class="per"type="radio" name="Tipo"><label for="tipo">herói/heroína</label>
         <input class="per"type="radio" name="Tipo"><label for="tipo">vilão/vilã</label>
-    </div>
+       </fieldset>
+   
         <button id="button"type="submit">Adicionar</button>
         </form>
+    </div>
     </section>
     </main>
     <footer>

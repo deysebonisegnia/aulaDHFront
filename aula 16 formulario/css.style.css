@@ -13,6 +13,7 @@
 }
 
 .header2 {
+    display: flex;
     width: 100%;
     height: 8.42%;
     background: #00669f;
@@ -21,8 +22,13 @@
     z-index: 1;
     top: 0px;
 }
-.header2 h1{
-    margin-left: 5rem;
+.header2 h1 {
+    margin-left: 10rem;
+
+}
+.header2 i{
+   font-size: 2rem;
+    margin-left: 3rem;
 }
 
 .retangulo {
@@ -89,60 +95,80 @@ main{
     align-items: center;
     flex-wrap: wrap;
     margin-left: -5rem;
-    margin-top: 18rem;
+    margin-top: 22rem;
 }
 
 .selected input{
-    width: 12vw;
+    width: 15vw;
     height: 5vh;
     margin-left:-8rem;
 }
 .selected label{
-    margin-left:-8rem;
+    margin-left:-7rem;
+    margin-top: 1rem;
 }
 .selected textarea{
-    width: 10vw;
-    height: 15vh;
+    width: 15vw;
+    height: 28vh;
     margin-left: -8rem;
     margin-top: 5rem;
     
 }
 .select{
-    margin-top: 23rem;
+    margin-top: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-left: 1rem;
+    height: 8vh;   
+}
+.especie{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+input[type="file"]::placeholder{
+    text-align: center;
+    width: 15vw;
+    border: none;
+    padding-top:1rem;
+  
 }
 #file{
-    margin-top:1rem ;
-    width: 15vw;
-    background-color: #888888;
+    color: #333;
 }
-#foto{
-    margin-top: -8rem;
+.checkbox {
+   display: inline;
+    width: 5vw;
 }
-#button{
-    margin-top: 50rem;
-    margin-left: -20rem;
+     
+fieldset{
+    margin: 0.5rem;
+    width: 10vw;
+    border: none;
 }
-.power{
-    margin-left: -10rem;
+.line{
+    color: #8a8989;
+    
 }
-.quali{
-    width: 3vw;
-    height: 3vh;
+
+.radio{
+    width: 12vw;
+    display: flex;
     flex-direction: row;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
+
+#button{
+    margin-top:2rem;
+    margin-left: -6rem;
+}
+
 .per{
 
     width: 5vw;
     height: 5vh;
 }
-form div{
+.registro,.login{
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -150,14 +176,14 @@ form div{
     align-items: center;
 }
 
-form h1{
+.registro h1,.login h1{
     font-size: 70px;
     text-align: left;
     margin-right: 350px;
     margin-bottom: 45px;
 }
 
-input{
+.login input, .registro input{
     width: 620px;
     height: 50px;
     border: 1.53px solid #000000;
@@ -194,7 +220,7 @@ input::placeholder{
     background-color: #1CD1B0 ;
 }
 
-form div h3{
+.registro h3 ,.login h3{
     width: 620px;
     height: 28px;
     color: #222222;
@@ -219,6 +245,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin-top: 151px;
+    color: #FFFFFF;
 }
 @media(max-width:500px){
     h2{

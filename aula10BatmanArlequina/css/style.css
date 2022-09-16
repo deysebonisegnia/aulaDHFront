@@ -90,13 +90,6 @@ main{
     width: 30vw;
     height: 100vh;
 }
-#sup{
-    margin-right: 25rem;
-}
-#arl{
-    margin-left: 25rem;
-    margin-top: -33rem;
-}
 
 .text-card {
     display: flex;
@@ -166,7 +159,7 @@ main{
         margin-top: 1rem;
     }
     .footer{
-        margin-top: 40rem;
+        margin-top: 8rem;
     }
     
     .card,.text-card,.text-card button, .bg{
