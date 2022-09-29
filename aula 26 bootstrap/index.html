@@ -28,13 +28,16 @@
     </head>
     <body>
       <!-- NAVBAR -->
-      <header>
-      <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
-        <div class="container py-3">
-          <a class="navbar-brand" href="#">
+      <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-primary-color" id="navbar"  >
+        <div class="container" >
+          <div class="navbar-brand" >
+            <figure>
             <img src="https://avatars.githubusercontent.com/u/103457494?s=400&u=d9b37958a55027dd901220aaa9a8d3e9ebf46ee5&v=4"alt="Deyse" />
-            <span>Deyse</span>
-          </a>
+            <figcaption>Deyse</figcaption>
+          </figure>
+         
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -46,20 +49,22 @@
           >
             <i class="bi bi-list"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-items">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
+         
+          <div class="collapse navbar-collapse role=navigation" id="navbar-items">
             
+            <ul class="navbar-nav me-auto sm-2 ms-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#featured-container">Projetos</a>
+                <a class="nav-link"href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#footer">Contato</a>
+                <a  class="nav-link" href="#featured-container">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link"href="#contact-form">Contatos</a>
               </li>
             </ul>
           </div>
+        
         </div>
       </nav>
     </header>
@@ -71,8 +76,11 @@
               <div class="card">
                 <img src="https://avatars.githubusercontent.com/u/103457494?v=4" alt="perfil">
                 <div class="card-body">
+
+                  
                   <h5 class="card-title">Deyse Bonisegnia</h5>
-                  <p class="card-text"> Developer Jr</p>
+                  <i  class="bi bi-star-fill"></i>
+                  <p class="card-text"> Devenvolvedora web_front-end</p>
                 </div>
               </div>
             </div>
@@ -93,6 +101,9 @@
                   <h4>Lemon-pie</h4>
                    
                   <div class="banner-content">
+                    <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#lemon">
+                      +
+                    </button>
                     
   
                   </div>
@@ -102,8 +113,13 @@
                   <h4>CVBatman</h4>
                    
                   <div class="banner-content">
-                    
-                    <h3>+</h3>
+                    <button type="button" class="btn btn-primary" 
+                     data-bs-toggle="modal" 
+                      data-bs-target="#Bat"> +
+    
+                    </button>
+
+                 
 
                   </div>
                   
@@ -113,7 +129,10 @@
                   <img src="./img/piza.jpeg" alt="pizza"class="img-fluid" />
               <h4>Pizzaria</h4> 
                   <div class="banner-content">
-                  
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Pizza">
+                      +
+                    </button>
+                    
                   
                   </div>
                 </div>
@@ -121,7 +140,9 @@
                   <img src="./img/super.png" alt="super"class="img-fluid" />
                   <h4>Super-Heroi</h4> 
                   <div class="banner-content">
-              
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#super">
+                      +
+                    </button>
                    
                   </div>
                 </div>
@@ -129,7 +150,9 @@
                   <img src="./img/petshop.jpeg" alt="petshop"class="img-fluid" />
                     <h4>Petshop</h4> 
                   <div class="banner-content">
-                   
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pet">
+                      +
+                    </button>
                   
                   </div>
                 </div>
@@ -137,24 +160,24 @@
                   <img src="./img/gameshop.jpeg" alt="gamesshop"class="img-fluid" />
                   <h4>Games Shop</h4>
                   <div class="banner-content">
-          
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Games">
+                      +
+                    </button>
                
                   </div>
                 </div>
               </div>
             </div>
           </div> 
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Lemon-pie
-          </button>
+          
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal lemon-pie-->
+<div class="modal fade" id="lemon" tabindex="-1" aria-labelledby="lemon-pie" aria-hidden="true">
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">lemon-pie</h5>
+      <h5 class="modal-title" id="lemon-pie">lemon-pie</h5>
     
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
@@ -163,28 +186,21 @@
       <p>Projetos realizando com front end da digital house</p>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <a href="https://github.com/deysebonisegnia/aulaDHFront/tree/main/aula04Receita%20de%20bolo" target="_blank">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-file-x"></i>Visite site</button></a>
 
     </div>
   </div>
 </div>
 </div>      
-                
-           
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" 
-data-bs-toggle="modal" 
-data-bs-target="#exampleModal"> batman
-    
- </button>
+  
 
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal Batman-->
+<div class="modal fade" id="Bat" tabindex="-1" aria-labelledby="Batman" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Batman</h5>
+        <h5 class="modal-title" id="Batman">Batman</h5>
       
         <button type="button" class="btn-close" 
         data-bs-dismiss="modal" aria-label="Close"></button>
@@ -194,7 +210,9 @@ data-bs-target="#exampleModal"> batman
         <p>Projetos realizando com front end da digital house</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://github.com/deysebonisegnia/aulaDHFront/tree/main/aula10BatmanArlequina" target="_blank">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-file-x"></i>Visite site</button></a>
+          
 
       </div>
     </div>
@@ -202,17 +220,13 @@ data-bs-target="#exampleModal"> batman
 </div>      
 
 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Pizzaria
-</button>
 
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal pizzaria-->
+<div class="modal fade" id="Pizza" tabindex="-1" aria-labelledby="Pizzaria" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">Pizzaria</h5>
+<h5 class="modal-title" id="Pizzaria">Pizzaria</h5>
 
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
@@ -221,31 +235,22 @@ data-bs-target="#exampleModal"> batman
 <p>Projetos realizando com front end da digital house</p>
 </div>
 <div class="modal-footer">
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <a href="https://github.com/deysebonisegnia/aulaDHFront/tree/main/aula%2011pizza" target="_blank">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-file-x"></i>Visite site</button></a>
+    
 
 </div>
 </div>
 </div>
 </div>      
 
-           
-           
-            
-           
-          </div>
-        </div>
-      </div>
-
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Super-Heroi
-      </button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          
+<!-- Modal super heroi-->
+<div class="modal fade" id="super" tabindex="-1" aria-labelledby="super heroi" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-  <h5 class="modal-title" id="exampleModalLabel">super</h5>
+  <h5 class="modal-title" id="super heroi">super heroi</h5>
 
   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
@@ -254,22 +259,20 @@ data-bs-target="#exampleModal"> batman
   <p>Projetos realizando com front end da digital house</p>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <a href="https://github.com/deysebonisegnia/aulaDHFront/blob/main/aula10BatmanArlequina/index.html" target="_blank">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-file-x"></i>Visite site</button></a>
+    
 
 </div>
 </div>
 </div>
-</div>  
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  petshop
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+</div> 
+<!-- Modal pet shop-->
+<div class="modal fade" id="pet" tabindex="-1" aria-labelledby="petshop" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">petshop"</h5>
+<h5 class="modal-title" id="petshop">petshop</h5>
 
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
@@ -278,20 +281,20 @@ data-bs-target="#exampleModal"> batman
 <p>Projetos realizando com front end da digital house</p>
 </div>
 <div class="modal-footer">
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
+  <a href="https://github.com/deysebonisegnia/aulaDHFront/tree/main/aula%2012%20pet" target="_blank">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-file-x"></i>Visite site</button></a>
+    
 </div>
 </div>
 </div>
 </div>  
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Games shop
-</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal games shop--> 
+
+<div class="modal fade" id="Games" tabindex="-1" aria-labelledby="Games shop" aria-hidden="true">
   <div class="modal-dialog">
   <div class="modal-content">
   <div class="modal-header">
-  <h5 class="modal-title" id="exampleModalLabel">Games shop</h5>
+  <h5 class="modal-title" id="Games shop">Games shop</h5>
   
   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
@@ -300,7 +303,10 @@ data-bs-target="#exampleModal"> batman
   <p>Projetos realizando com front end da digital house</p>
   </div>
   <div class="modal-footer">
-  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <a href="https://github.com/deysebonisegnia/aulaDHFront/tree/main/aula%2020%20games" target="_blank">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-file-x"></i>Visite site</button></a>
+      
+  </div>
   
   </div>
   </div>
@@ -316,7 +322,7 @@ data-bs-target="#exampleModal"> batman
             
             <div class="col-12  bg-secondary-color" id="info-content">
              
-                <div class="col-12 " id=>
+                
                   <h2 class="title">Estes dados fazem a diferença:</h2>
                   <i class="bi bi-star-fill"></i>
 
@@ -334,11 +340,11 @@ data-bs-target="#exampleModal"> batman
                     soluta magnam maxime cum debitis.
                   </p>
                 </div>
-                </div>
+             
               </div>
             </div>
           </div>
-       
+        </div>
       <div class="col-md-12" id="contact-form">
         <h2 class="title">Contate-nos:</h2>
       <i class="bi bi-star-fill"></i>
@@ -359,14 +365,7 @@ data-bs-target="#exampleModal"> batman
     <div class="container">
       <div class="row">
         <!-- FOOTER TOP -->
-        <div class="col-12" id="footer-top">
-          <div class="row justify-content-between">
-            <div class="col-4">
-             
-            </div>
-            
-          </div>
-        </div>
+        
         <!-- FOOTER DETAILS -->
         <div class="col-12" id="footer-details">
           <div class="row">
@@ -380,7 +379,8 @@ data-bs-target="#exampleModal"> batman
               </p>
 
             </div>
-            <div class="col-12 col-md-4" id="contact-container">
+            <div class="col-12 col-md-4 " id="contact-container">
+              
               <h4>Formas de contato</h4>
               <p class="secondary-color">(34)9999-9999</p>
               <p class="secondary-color">contato@deyse.com</p>
@@ -388,12 +388,13 @@ data-bs-target="#exampleModal"> batman
             <div class="col-12 col-md-4" id="links-container">
               <div class="row">
                 <h4>Redes sociais</h4>
-                <div class="col-6">
+                <div class="col-md-4">
                   <div class="col-4" id="social-icons">
                     <i class="bi bi-facebook"></i>
                     <i class="bi bi-instagram"></i>
                     <i class="bi bi-youtube"></i>
                     <i class="bi bi-twitter"></i>
+                 
                   </div>
                 </div>
               </div>
