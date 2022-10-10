@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*Estilização header */
+
+.cabecalho-fundo {
+    background-color: #FFFFFF;
+}
+
+.cabecalho {
+    font-size: 1.563rem;
+    font-weight: 550;
+    color: #eeecf0;
+}
+
+.navegacao ul li a{
+    color: #000000;
+    font-weight: 550;
+}
+
+.nav-link:hover {
+    color: #E51B3E;
+}
+
+/*Estilização banner*/
+
+.baner-filmes {
+    background-image: url(../img/back-filme.png);
+    background-attachment: fixed;
+}
+
+.baner-filmes h2 {
+    color: #E51B3E;
+}
+
+.descricao-baner {
+    color: #FFFFFF;
+}
+
+.btn-dark {
+    width: 10rem;
+}
+
+.btn-dark:hover {
+    background-color: #ad0b26 !important;
+}
+
+/*Estilização cards*/
+
+.card {
+    border: none;
+}
+
+.card-body {
+    background-color: #F4F4F4;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.card-img-top {
+    height: 12rem;
+}
+
+.card-body a {
+    background-color: #000000;
+    width: 10rem;
+}
+
+.btn-primary {
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ad0b26 !important;
+    transform: scale(1, 1.2);
+}
+
+/*Estilização footer*/
+
+footer {
+    background-color: #171717;
+    color: #FFFFFF;
+}

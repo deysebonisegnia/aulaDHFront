@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.barDiscount{
+    background-color: #1CD1B0;
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.barDiscount h3{
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 8.42%;
+    background: #00669f;
+    box-shadow: 0px 10px 7px 0px #00000040;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    flex-wrap: wrap;
+}
+
+h1 ,h2{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 47px;
+    align-items: center;
+    font-family: "Fredoka One", sans-serif;
+    color: #f3f3f3;
+
+}
+
+.sip {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
+}
+.sip img{
+    width: 8vw;
+    height: 8vh;
+    margin: 0.3rem 0rem 1rem 1rem;
+}
+
+.retangulo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 3.17%;
+    background-color: #001D2D;
+    justify-content: end;
+    align-items: center;
+    padding: 1.09%;
+}
+
+.retangulo a {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    position: relative;
+    right: 3%;
+    margin-right: 10px;
+}
+
+.container div h2{
+    color: #000000;
+
+
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.container div h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    
+}
+
+input{
+    width: 420px;
+    height: 50px;
+    border: 1.53px solid #000000;
+    margin-bottom: 20px;
+    padding: 15px;
+
+
+}
+
+input::placeholder{
+    color: #000000
+    
+
+}
+
+main{
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+main button {
+    width: 200px;
+    height: 54px;
+    background: #1cd1b0;
+    color: #000000;
+    border: none;
+    border-radius: 23px;
+    font-family: 'karla', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 44px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.botao{
+    flex-direction: row;
+    height:200px;
+    
+}
+
+.botao-reg{
+    background-color: #888888;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 51px;
+    background: #00669f;
+    padding: 16px 28px;
+    color: #f3f3f3;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}

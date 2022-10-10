@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+    
+}
+body {
+    background: url(../img/pao-3.png),
+                #222;
+    background-position: center;
+    background-repeat: repeat;
+    
+    
+
+}
+header {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ccc;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+header nav ul li {
+    padding: 10px;
+    border: 1px solid #222;
+    border-radius: 12px;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 10px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #222;
+}
+header nav ul li:hover {
+    background-color: #222;
+    transition: all .6s;
+}
+header nav ul li:hover a {
+    color: #fff;
+    transition: all .6s;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.landscape-main {
+    width: 100%;
+    background-image: url(../img/minas_paisagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.BlockMain {
+    width: 60%;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    margin-right: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 28px;
+}
+
+section h1.title {
+    text-align: center;
+    padding-top: 98px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+}
+section .cards #card-1 {
+    background-image: url(../img/alexandre-brondino-70c72J41-yM-unsplash.jpg);
+    background-repeat: no-repeat;
+    
+}
+section .cards #card-2 {
+    background-image: url(../img/cânion.jpg);
+    background-repeat: no-repeat;
+
+}
+section .cards #card-3 {
+    background-image: url(../img/daniel-monteiro-si9IpVGUn-Y-unsplash.jpg);
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+section .cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+section .cards .card {
+    padding-left: 36px;
+    width: 350px;
+    height: 640px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 31px;
+    padding-right: 36px;
+
+}
+
+section .cards .card p {
+    padding: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+section .video {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section .video h2{
+    margin-top: 10px;
+    font-size: 2em;
+    color: #fff;
+
+}
+section .video iframe {
+    margin-top: 15px;
+    width: 90%;
+    border: 4px solid #ccc;
+    border-radius: 12px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.footer p{
+    color: #fff;
+    margin: 1rem;
+
+}
+.footer img{
+    width: 18vw;
+    height: 15vh;
+    background-color:#ccc;
+    padding: 1rem;
+    }
+    .footer img:hover{
+        transform: scale(1.1);
+        transition: all 1s ease-in-out;
+        border:2px solid #fff;
+        box-shadow: 0 20px 30px #ccc;
+        border-radius: 1rem;
+
+    }
+    
+    .button{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 15vw;
+    
+    }
+
+
+    .button i{
+            cursor: pointer;
+            background-color: #f7f7f7;
+            color: #000;
+            border-radius: 50%;
+            font-size: 3rem;
+            list-style: none;
+            text-decoration: none;
+            outline: none;
+        } 
+
+    
+.button i:hover {
+    background-color:#222;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+
+
+} 
+/*responsivo*/
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+    }
+    
+    section .cards{
+        flex-direction: column;
+    }
+    
+    section .cards .card {
+        margin-top: 15px;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .button {
+        flex-direction: column;
+    }
+} 
+
+
+

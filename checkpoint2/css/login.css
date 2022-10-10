@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*Estilização header */
+
+.cabecalho-fundo {
+    background-color: #FFFFFF;
+}
+
+.cabecalho {
+    font-size: 1.563rem;
+    font-weight: 550;
+    color: #eeecf0;
+}
+
+.navegacao ul li a{
+    color: #000000;
+    font-weight: 550;
+}
+
+.nav-link:hover {
+    color: #E51B3E;
+}
+/*Estilização banner*/
+
+.baner-filmes {
+    background-image: url(../img/back-filme.png);
+    background-attachment: fixed;
+}
+
+.baner-filmes h2 {
+    color: #E51B3E;
+}
+
+.descricao-baner {
+    color: #FFFFFF;
+}
+
+
+
+
+/*Estilização login*/
+
+.modal-footer button{
+    width: 50vw;
+   background-color:  #33BB69;;
+   color: #171717;
+}
+
+
+#btn{
+    background-color: #fff;
+    color: #ad0b26;
+    width: 10vw;
+    height: 10vh;
+  margin-top: 3rem;
+  
+}
+
+#btn:hover{
+    background-color: #ad0b26 ;
+    border: none;
+    color: #FFF;
+}
+
+/*Estilização footer*/
+
+footer {
+    background-color: #171717;
+    color: #FFFFFF;
+}

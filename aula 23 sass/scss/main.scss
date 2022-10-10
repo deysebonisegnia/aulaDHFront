@@ -1,0 +1,195 @@
+$color-hover:rgb(249, 246, 246);
+$color-text2:#222;
+$text-color:#088e87;;
+$bg-secondary: #999393;
+$color-primary: #03faee;
+$shadow: #92f7f2;
+@mixin box-shadow() {
+  box-shadow: -2px 2px 3px -2px rgba($shadow, 0.6);
+}
+@mixin flex (){
+  display: flex;
+  justify-content: space-around;
+}
+
+@for $i from 1 through 3{
+  .text-#{$i}{
+      font-style: italic;
+      
+  }
+}
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  @include flex();
+  height: 13vh;
+
+  align-items: center;
+  border-bottom: 1px solid $bg-secondary;
+  h1 {
+    color:$text-color;
+    font-size: 1.5rem;
+    transition: all 1s ease;
+    &:hover {
+      transform: skew(20deg);
+      color: $color-primary;
+
+  }
+  }
+  ul {
+    @include flex();
+    flex-direction: row;
+    width: 70vw;
+   
+  }
+  li {
+    @include flex();
+   
+    width: 65vw;
+    a {
+      color: $bg-secondary;
+      justify-content: space-between;
+      text-decoration: none;
+      &:hover {
+        color: $color-primary;
+        font-size: 1.1rem;
+      }
+    }
+  }
+} 
+
+
+.be{
+  @include flex();
+  margin-top: 0.5rem;
+}
+.happy {
+ 
+ display: flex;
+ flex-direction: column;
+  h2{
+  
+    color: $color-text2;
+    background-color: $color-primary;
+  
+   font-size: 1.5rem;
+   width: 30vw;
+  }
+  span{
+    font-size: 1.5rem;
+  }
+}
+p{
+  width: 90vw;
+  text-align: center;
+  padding: 1rem;
+}
+.button{
+  @include flex();
+  flex-direction: row;
+ 
+  width: 80vw;
+  button{
+    background-color: $color-primary;
+   width: 15vw;
+   height: 5vh;
+    border-radius: 4px;
+    border: none;
+    transition: all .5s ease-in-out;
+    &:hover{
+      cursor: pointer;
+      color: $color-hover;
+      transform: scaleX(1.1);
+
+    }
+   }
+}
+
+
+ 
+.img{ 
+ width: 20vw;
+  height: 20vh;
+}
+.cards{
+  @include flex();
+  flex-direction: column;
+}
+.card{
+  text-align: center;
+  border:1px solid $bg-secondary;
+  margin: 0.5rem;
+  span{
+    border-radius: 50%;
+    border: 1px solid $bg-secondary;
+    border-left: 5px solid $color-primary;
+    padding: 0 0.1rem;
+  }
+}
+
+#footer {
+  width: 90vw;
+  @include flex();
+  margin: 1rem;
+}
+#copy-area {
+   @include flex();
+  flex-direction: row;
+
+   img {
+    width: 5vw;
+    height: 5vh;
+    border-radius: 50%;
+    border-left: 5px solid $color-primary;
+    margin: 1rem;
+    transition: all 1s ease-in-out;
+    &:hover {
+     cursor: pointer;
+     transform:scale(1.2)
+  }
+}
+}
+@media (min-width:1200px){
+    header ul{
+    width: 30vw;
+   }
+   .happy h2{
+    width: 10vw;
+   
+   }
+   .img{
+    width: 40vw;
+    height: 40vh;
+   }
+   
+   
+   p{
+    width: 50vw;
+    
+   }
+   .button{
+    width: 40vw;
+    button{
+      width: 10vw;
+    }
+   }
+   .cards{
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 1rem;
+   }
+   .card{
+    width: 30vw;
+    p{
+      width: 30vw;
+      font-size: 0.7rem;
+    }
+   }
+
+}

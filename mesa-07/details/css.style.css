@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto Arial, Helvetica, sans-serif;
+}
+.ground{
+    background-color: #1CD1B0;
+    height: 5vh;
+    width: 100vw;
+}
+
+h1{
+    background-color: #00669F;
+    padding: 1rem;
+    color: #fff;
+} 
+header{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+main{
+    background-image: url("./img/Arquilena\ fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+} 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 80vh;
+    background-color:#F3F3F3;
+    position: absolute;
+    top :5rem;
+    left: 28rem;
+    border-radius: 30px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}.hero{
+    position: absolute;
+    width: 20vh;
+    height: 10vw;
+    left: 8rem;
+    top: -4rem;
+}
+.heart{
+    position: absolute;
+    left: 20px;
+    top: 70px;
+}
+.text{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+} 
+.text h2{
+font-size: 2rem;
+font-weight: 400;
+line-height: 2.1rem;
+letter-spacing: 0em;
+text-align: left;
+color:#2C0187;
+margin-top: -3rem;
+
+}
+.text p{
+font-size: 1rem;
+font-style: italic;
+font-weight: 400;
+line-height: 1rem;
+letter-spacing: 0em;
+text-align: center;
+padding: 1rem;
+
+
+}
+.text button {
+    background-color: #2C0187;
+    color: #fff;
+    border-radius: 0px 0px 45px 45px;
+    width: 30vw;
+    height: 10vh;
+    margin-bottom: -9rem;
+} .text a{
+    color: #fff;
+}
+footer{
+    color: #fff;
+    background-color: #00669F;
+    text-align: center;
+    padding: 1rem;
+}
+@media (max-width: 500px){
+    .container{
+        top :5rem;
+        left: 5rem;
+        width: 70vw;
+        height: 80vh;
+} 
+main{
+    height: 120vh;
+}
+    .hero{
+        top:-2rem;
+        left: 7rem;
+        width: 20vw;
+        height: 20vh;
+}
+    .card{
+        text-align:  center;
+        height: 10vh;
+        width: 20vw;
+    }
+    .text {
+        display: flex;
+        gap:12px;
+        margin-top:-3rem;
+        padding: 1rem;
+    }
+    .text button {
+        width: 70vw;
+    }
+
+
+
+}
